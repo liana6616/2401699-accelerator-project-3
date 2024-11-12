@@ -233,7 +233,7 @@
     right: 31px;
     width: 16px;
     height: 8px;
-    mask-image: url("../__spritemap#sprite-stroke-view");
+    mask-image: url("/__spritemap#sprite-stroke-view");
     mask-repeat: no-repeat;
     mask-size: 16px 8px;
     background-color: $base-light;
@@ -298,7 +298,7 @@
   left: 5px;
   width: 10px;
   height: 10px;
-  mask-image: url("../__spritemap#sprite-check-view");
+  mask-image: url("/__spritemap#sprite-check-view");
   mask-repeat: no-repeat;
   display: block;
   mask-size: 10px 10px;
@@ -424,7 +424,7 @@
     right: 15px;
     width: 10px;
     height: 10px;
-    mask-image: url("../__spritemap#sprite-arrow-big-view");
+    mask-image: url("/__spritemap#sprite-arrow-big-view");
     mask-repeat: no-repeat;
     mask-size: 8px 10px;
     background-color: $base-dark-alt;

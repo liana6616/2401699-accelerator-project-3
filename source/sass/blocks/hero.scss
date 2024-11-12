@@ -72,7 +72,7 @@
     right: -10px;
     width: 10px;
     height: 10px;
-    mask-image: url("../__spritemap#sprite-vector-bg-view");
+    mask-image: url("/__spritemap#sprite-vector-bg-view");
     mask-repeat: no-repeat;
     background-color: $base-light;
   }
@@ -212,7 +212,7 @@
     right: 13px;
     width: 10px;
     height: 10px;
-    mask-image: url("../__spritemap#sprite-vector-bg-view");
+    mask-image: url("/__spritemap#sprite-vector-bg-view");
     mask-repeat: no-repeat;
     background-color: $base-light;
     transform: rotate(90deg);
@@ -257,7 +257,7 @@
     right: -10px;
     width: 10px;
     height: 10px;
-    mask-image: url("../__spritemap#sprite-vector-bg-view");
+    mask-image: url("/__spritemap#sprite-vector-bg-view");
     mask-repeat: no-repeat;
     background-color: $base-light;
     transform: rotate(90deg);
@@ -294,7 +294,7 @@
     right: 16px;
     width: 10px;
     height: 10px;
-    mask-image: url("../__spritemap#sprite-arrow-view");
+    mask-image: url("/__spritemap#sprite-arrow-view");
     mask-repeat: no-repeat;
     mask-size: 10px 10px;
     background-color: $base-light;
@@ -311,7 +311,7 @@
       right: 21px;
       width: 10px;
       height: 10px;
-      mask-image: url("../__spritemap#sprite-arrow-big-view");
+      mask-image: url("/__spritemap#sprite-arrow-big-view");
       mask-repeat: no-repeat;
       mask-size: 10px 10px;
     }
