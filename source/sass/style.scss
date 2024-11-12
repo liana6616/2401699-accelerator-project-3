@@ -2,3 +2,32 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+@import "common/variables";
+@import "common/global";
+@import "common/fonts";
+@import "common/visually-hidden";
+
+/* BLOCKS */
+@import "blocks/main";
+@import "blocks/overlay";
+@import "blocks/hero";
+@import "blocks/header";
+@import "blocks/list";
+@import "blocks/list-style";
+@import "blocks/link";
+@import "blocks/link-style";
+@import "blocks/link-button";
+@import "blocks/about";
+@import "blocks/button";
+@import "blocks/h3";
+@import "blocks/h4";
+@import "blocks/h5";
+@import "blocks/programs";
+@import "blocks/grant";
+@import "blocks/news";
+@import "blocks/faq";
+@import "blocks/reviews";
+@import "blocks/contacts";
+@import "blocks/form";
+@import "blocks/footer";
+@import "blocks/modal";

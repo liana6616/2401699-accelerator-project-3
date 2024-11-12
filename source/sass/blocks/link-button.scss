@@ -1,0 +1,55 @@
+.link-btn {
+  &:hover {
+    color: $base-light;
+    background-color: $base-dark-alt;
+  }
+
+  &:hover::after {
+    background-color: $base-light;
+  }
+
+  &:hover::before {
+    right: 27px;
+    transform: rotate(45deg);
+    background-color: $base-dark-alt;
+  }
+
+  &:active {
+    color: $bg-style-light;
+    background-color: $base-dark-alt;
+  }
+
+  &:focus-visible::before {
+    transform: rotate(45deg);
+  }
+
+  &:active::after {
+    background-color: $base-light;
+  }
+
+  &:active::before {
+    right: 27px;
+    transform: rotate(45deg);
+    background-color: $bg-overlay-ligth;
+  }
+
+  &:disabled {
+    color: $bg-style;
+    background-color: inherit;
+    border: 1px solid $bg-style;
+  }
+
+  &:disabled::after {
+    background-color: inherit;
+  }
+
+  &:disabled::before {
+    background-color: $bg-style;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    &:focus-visible::before {
+      right: 27px;
+    }
+  }
+}

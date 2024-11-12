@@ -1,0 +1,43 @@
+.link {
+  padding: 16px 58px 14px 20px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  text-decoration: none;
+  color: $base-dark-alt;
+  background-color: $base-light;
+  text-transform: uppercase;
+  border: 1px solid $base-dark-alt;
+  border-radius: 30px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 4px;
+    right: 4px;
+    width: 34px;
+    height: 34px;
+    background-color: $base-dark-alt;
+    border-radius: 44px;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    padding: 20px 80px 20px 30px;
+    font-size: 14px;
+    line-height: 14px;
+
+    &::after {
+      width: 46px;
+      height: 46px;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    padding: 21px 81px 21px 30px;
+
+    &::after {
+      top: 5px;
+      right: 5px;
+    }
+  }
+}

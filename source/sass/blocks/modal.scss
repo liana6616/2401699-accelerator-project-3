@@ -1,0 +1,441 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: $bg-overlay-dark;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal.hide {
+  display: none;
+}
+
+.modal__svg {
+  @media (min-width: $min-width-tablet) {
+    position: relative;
+    top: 10px;
+    right: 18px;
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.modal__wrapper {
+  position: relative;
+  display: block;
+  margin: auto;
+  padding: 35px 15px;
+  border-radius: 16px;
+  background: $base-light;
+
+  @media (min-width: $min-width-tablet) {
+    padding: 55px 80px 60px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    padding: 50px 80px 60px;
+  }
+}
+
+.modal__close-button {
+  position: absolute;
+  right: 28px;
+  top: 19px;
+  width: 12px;
+  height: 12px;
+  border: none;
+  background: none;
+}
+
+.modal__wrapper-position {
+  position: relative;
+  width: $min-width-mobile;
+  margin: 0 auto;
+  padding: 40px 0;
+
+  @media (min-width: $min-width-tablet) {
+    width: $min-width-tablet;
+    padding: 50px 58px;
+  }
+}
+
+.modal__form-position {
+  width: 260px;
+  border-radius: 16px;
+
+  p {
+    width: 220px;
+    margin: 0 20px 25px;
+    font-size: 14px;
+    line-height: 20px;
+    color: $base-dark;
+    text-align: center;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    width: 350px;
+
+    p {
+      width: 350px;
+      margin: 0 0 30px;
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    p {
+      line-height: 26px;
+    }
+  }
+}
+
+.modal__title {
+  width: 220px;
+  margin: 0 20px 10px;
+  color: $base-dark-alt;
+  text-align: center;
+
+  @media (min-width: $min-width-tablet) {
+    width: 350px;
+    margin: 2px 0 15px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+.modal__text-position {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0 0 15px;
+
+  @media (min-width: $min-width-tablet) {
+    margin: 0 0 20px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    margin: 0 0 17px;
+  }
+}
+
+.modal__text {
+  margin: 0 0 8px;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(72, 72, 72, 0.8);
+
+  @media (min-width: $min-width-tablet) {
+    margin: 0 0 12px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.modal__input.error {
+  border: 1px solid $error;
+  background: $error;
+}
+
+.modal__input {
+  width: 260px;
+  min-height: 44px;
+  padding: 14px 23px;
+  background: none;
+  border: 1px solid rgba(72, 72, 72, 0.3);
+  border-radius: 8px;
+  appearance: none;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid $bg;
+  }
+
+  &:focus {
+    border: 1px solid $bg;
+  }
+
+  &:active {
+    border: 1px solid $bg;
+  }
+
+  &:disabled {
+    border: 1px solid rgba(169, 175, 183, 0.5);
+    background: rgba(169, 175, 183, 0.5);
+  }
+
+  @media (min-width: $min-width-tablet) {
+    width: 350px;
+    min-height: 50px;
+  }
+}
+
+.modal__wrapper-city {
+  position: relative;
+  display: flex;
+  min-height: 78px;
+  flex-direction: column;
+  margin: 0 0 5px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 41px;
+    right: 20px;
+    width: 16px;
+    height: 8px;
+    mask-image: url("../__spritemap#sprite-stroke-view");
+    mask-repeat: no-repeat;
+    mask-size: 16px 8px;
+    background-color: $base-dark-alt;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    margin: 0 0 20px;
+
+    &::after {
+      top: 55px;
+      right: 21px;
+    }
+  }
+}
+
+.modal__wrapper-confidential {
+  position: relative;
+  display: flex;
+  min-height: 20px;
+  gap: 15px;
+  align-items: center;
+  width: 230px;
+  margin: 0 0 0 30px;
+
+  @media (min-width: $min-width-tablet) {
+    gap: 10px;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.modal__input-checkbox {
+  position: absolute;
+  content: "";
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  z-index: 9;
+
+  @media (min-width: $min-width-tablet) {
+    left: 0;
+  }
+}
+
+.modal__input-box {
+  position: absolute;
+  content: "";
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: $base-dark-alt;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+
+  @media (min-width: $min-width-tablet) {
+    left: 0;
+  }
+}
+
+.modal__text-confidential .modal__input-checkbox:checked ~ .modal__input-box::after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  mask-image: url("../__spritemap#sprite-check-view");
+  mask-repeat: no-repeat;
+  display: block;
+  mask-size: 10px 10px;
+  background-color: $base-light;
+  z-index: 9;
+
+  @media (min-width: $min-width-tablet) {
+    background-size: 23px auto;
+    position: relative;
+    bottom: 43px;
+  }
+}
+
+.modal__text-confidential {
+  position: relative;
+  min-height: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(72, 72, 72, 0.9);
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    width: 334px;
+    padding: 0 0 0 30px;
+    line-height: 12px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    width: 350px;
+  }
+}
+
+.modal__button {
+  position: relative;
+  min-width: 260px;
+  margin: 25px 0 5px;
+  padding: 15px 69px 13px 31px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  color: $base-dark-alt;
+  background: none;
+  border: 1px solid $base-dark-alt;
+  border-radius: 30px;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 3px;
+    right: 3px;
+    width: 34px;
+    height: 34px;
+    background: $base-dark-alt;
+    border-radius: 44px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 14px;
+    width: 10px;
+    height: 10px;
+    mask-image: url("../__spritemap#sprite-arrow-big-view");
+    mask-repeat: no-repeat;
+    mask-size: 8px 10px;
+    background-color: $base-light;
+    z-index: 3;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    display: flex;
+    align-items: center;
+    min-width: 94px;
+    margin: 30px auto 0;
+    padding: 19px 79px 19px 30px;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.28px;
+
+    &::after {
+      width: 46px;
+      height: 46px;
+    }
+
+    &::before {
+      top: 22px;
+      right: 21px;
+    }
+  }
+}
+
+.modal__text-confidential:hover .modal__input-checkbox ~ .modal__input-box {
+  border: 1px solid $base-dark;
+  background: $base-dark-alt;
+}
+
+.modal__text-confidential:focus-visible .modal__input-checkbox ~ .modal__input-box {
+  border: 1px solid $base-dark;
+  background: $base-dark-alt;
+}
+
+.modal__text-confidential:active .modal__input-checkbox ~ .modal__input-box {
+  border: 1px solid $base-dark-alt;
+  background: $base-light;
+  opacity: 0.6;
+}
+
+.modal__text-confidential:hover .modal__input-checkbox:checked ~ .modal__input-box {
+  border: 1px solid $base-dark-alt;
+  background: $base-light;
+}
+
+.modal__text-confidential:focus-visible .modal__input-checkbox:checked ~ .modal__input-box {
+  border: 1px solid $base-dark-alt;
+  background: $base-light;
+}
+
+.modal__text-confidential:active .modal__input-checkbox:checked ~ .modal__input-box {
+  border: 1px solid $base-dark-alt;
+  background: $base-light;
+}
+
+.modal__text-confidential .modal__input-checkbox:disabled ~ .modal__input-box {
+  border: 1px solid $bg;
+  background: $bg;
+}
+
+.modal__text-confidential .modal__input-checkbox:checked:hover ~ .modal__input-box::after {
+  top: 4px;
+  left: 4px;
+  background: $base-dark-alt;
+}
+
+.modal__text-confidential .modal__input-checkbox:checked:focus-visible ~ .modal__input-box::after {
+  top: 4px;
+  left: 4px;
+  background: $base-dark-alt;
+}
+
+.modal__text-confidential .modal__input-checkbox:checked:active ~ .modal__input-box::after {
+  top: 4px;
+  left: 4px;
+  background: $base-dark-alt;
+  opacity: 0.9;
+}
+
+.modal__text-confidential .modal__input-checkbox:checked:disabled ~ .modal__input-box::after {
+  top: 4px;
+  left: 4px;
+  border: 1px solid $bg-style-light;
+}

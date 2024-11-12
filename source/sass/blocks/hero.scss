@@ -1,0 +1,326 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.hero__picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 568px;
+
+  @media (min-width: $min-width-tablet) {
+    height: 1024px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    height: 800px;
+  }
+}
+
+.hero__position-picture {
+  max-width: $min-width-mobile;
+  min-height: 568px;
+
+  @media (min-width: $min-width-tablet) {
+    max-width: $min-width-tablet;
+    min-height: 1024px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    max-width: $min-width-desktop;
+    min-height: 800px;
+  }
+}
+
+.hero__wrapper {
+  max-width: 320px;
+  min-height: 466px;
+  padding: 75px 15px 20px;
+  background: $bg-overlay-dark;
+
+  @media (min-width: $min-width-tablet) {
+    max-width: $min-width-tablet;
+    padding: 100px 64px 0 45px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    max-width: $min-width-desktop;
+    padding: 100px 372px 0 100px;
+  }
+}
+
+.hero__wrapper-pagination.swiper-pagination {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 80px;
+  height: 28px;
+  background-color: $base-light;
+  border-radius: 12px 12px 0 0;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 18px;
+    right: -10px;
+    width: 10px;
+    height: 10px;
+    mask-image: url("../__spritemap#sprite-vector-bg-view");
+    mask-repeat: no-repeat;
+    background-color: $base-light;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px 20px 0 0;
+
+    &::after {
+      top: 16px;
+      right: -25px;
+      width: 26px;
+      height: 26px;
+    }
+  }
+}
+
+.hero__position-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 473px;
+
+  @media (min-width: $min-width-tablet) {
+    min-height: 924px;
+  }
+
+  @media (min-width: $min-width-desktop) {
+    min-height: 700px;
+  }
+}
+
+.hero__button-pagination {
+  position: relative;
+  visibility: hidden;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+
+  &::after {
+    visibility: visible;
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border: 2px solid $base-dark-alt;
+    border-radius: 10px;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    width: 12px;
+    height: 12px;
+
+    &::after {
+      width: 12px;
+      height: 12px;
+    }
+  }
+}
+
+.hero__button-pagination--active {
+  background: $bg-alt;
+  border: 1px solid $bg-alt;
+  visibility: visible;
+  border-radius: 16px;
+  cursor: default;
+
+  &::after {
+    left: -1px;
+    bottom: -1px;
+  }
+}
+
+.hero__text {
+  width: $width-alt-small;
+
+  p {
+    width: 267px;
+    margin: 0;
+    padding: 0 14px 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $base-dark;
+    background-color: $base-light;
+    border-radius: 0 0 14px;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    position: relative;
+    width: 659px;
+    padding-bottom: 60px;
+
+    p {
+      width: 593px;
+      padding: 0 268px 35px 40px;
+      font-size: 16px;
+      line-height: 20px;
+      border-radius: 0 0 30px 30px;
+    }
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    width: 968px;
+    padding-bottom: 60px;
+
+    p {
+      width: 775px;
+      padding: 0 268px 35px 50px;
+      font-size: 16px;
+      line-height: 26px;
+      border-radius: 0 0 30px 30px;
+    }
+  }
+}
+
+.hero__title {
+  position: relative;
+  margin: 0;
+  padding: 20px 15px 16px 14px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: $base-dark-alt;
+  background-color: $base-light;
+  border-radius: 0 16px 16px 0;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    right: 13px;
+    width: 10px;
+    height: 10px;
+    mask-image: url("../__spritemap#sprite-vector-bg-view");
+    mask-repeat: no-repeat;
+    background-color: $base-light;
+    transform: rotate(90deg);
+  }
+
+  @media (min-width: $min-width-tablet) {
+    padding: 30px 69px 24px 40px;
+    font-size: 36px;
+    line-height: 44px;
+    border-radius: 0 30px 30px 0;
+
+    &::after {
+      bottom: -26px;
+      right: 40px;
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    padding: 40px 50px 30px;
+    font-size: 54px;
+    line-height: 62px;
+
+    &::after {
+      right: 167px;
+    }
+  }
+}
+
+.hero__link-wrapper {
+  position: relative;
+  width: 184px;
+  height: 64px;
+  background-color: $base-light;
+  border-radius: 0 0 14px 14px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 54px;
+    right: -10px;
+    width: 10px;
+    height: 10px;
+    mask-image: url("../__spritemap#sprite-vector-bg-view");
+    mask-repeat: no-repeat;
+    background-color: $base-light;
+    transform: rotate(90deg);
+  }
+
+  @media (min-width: $min-width-tablet) {
+    position: absolute;
+    bottom: 141px;
+    right: 135px;
+    background-color: inherit;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    bottom: 109px;
+    right: 273px;
+  }
+}
+
+.hero__link {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 15px;
+  letter-spacing: 0.24px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 16px;
+    right: 16px;
+    width: 10px;
+    height: 10px;
+    mask-image: url("../__spritemap#sprite-arrow-view");
+    mask-repeat: no-repeat;
+    mask-size: 10px 10px;
+    background-color: $base-light;
+    z-index: 1;
+  }
+
+  @media (min-width: $min-width-tablet) {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.28px;
+
+    &::before {
+      bottom: 23px;
+      right: 21px;
+      width: 10px;
+      height: 10px;
+      mask-image: url("../__spritemap#sprite-arrow-big-view");
+      mask-repeat: no-repeat;
+      mask-size: 10px 10px;
+    }
+  }
+
+  @media (min-width: $min-width-desktop) {
+    &::before {
+      right: 22px;
+      mask-size: 8px 10px;
+    }
+  }
+}
