@@ -19,11 +19,11 @@ new Swiper('#swiper-programs', {
       allowTouchMove: true,
     },
     768: {
-      slidesPerView: 2.1,
+      slidesPerView: 2,
       allowTouchMove: true,
     },
     1440: {
-      slidesPerView: 2.93,
+      slidesPerView: 3,
       allowTouchMove: false,
     }
   }

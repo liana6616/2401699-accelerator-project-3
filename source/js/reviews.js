@@ -19,12 +19,12 @@ new Swiper('#swiper-reviews', {
       slidesPerView: 1,
       allowTouchMove: true,
     },
-    768: {
-      slidesPerView: 1.11,
-      allowTouchMove: true,
-    },
+    // 768: {
+    //   slidesPerView: 1,
+    //   allowTouchMove: true,
+    // },
     1440: {
-      slidesPerView: 1.95,
+      slidesPerView: 2,
       allowTouchMove: false,
     }
   }

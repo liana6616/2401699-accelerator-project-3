@@ -169,6 +169,13 @@
       right: 20px;
     }
   }
+
+  @media (min-width: $min-width-desktop) {
+    &::before {
+      bottom: 21px;
+      right: 21px;
+    }
+  }
 }
 
 .about__list {

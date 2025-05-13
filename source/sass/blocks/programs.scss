@@ -13,7 +13,7 @@
 
   @media (min-width: $min-width-tablet) {
     width: $min-width-tablet;
-    padding: 50px 0 50px 45px;
+    padding: 50px 45px;
   }
 
   @media (min-width: $min-width-desktop) {
@@ -83,7 +83,7 @@
 
 .programs__wrapper {
   @media (min-width: $min-width-tablet) {
-    max-width: 324px;
+    // max-width: 324px;
 
     &:nth-child(n+5) {
       display: none;
@@ -92,7 +92,7 @@
 
   @media (min-width: $min-width-desktop) {
     display: none;
-    max-width: 392px;
+    // max-width: 392px;
 
     &:nth-child(n+5) {
       display: flow;
@@ -130,13 +130,13 @@
   margin-bottom: 75px;
 
   @media (min-width: $min-width-tablet) {
-    gap: 30px;
+    // gap: 30px;
     margin-bottom: 50px;
   }
 
   @media (min-width: $min-width-desktop) {
     margin-bottom: 50px;
-    gap: 32px;
+    // gap: 32px;
   }
 }
 
@@ -240,7 +240,7 @@
   &::before {
     position: absolute;
     content: "";
-    top: 69px;
+    top: 70px;
     right: 27px;
     width: 10px;
     height: 10px;
@@ -269,6 +269,7 @@
   border: none;
   transform: rotate(-135deg);
   cursor: pointer;
+  border-radius: 50px;
 }
 
 .programs__button-next {
@@ -278,6 +279,7 @@
   border: none;
   cursor: pointer;
   transform: rotate(45deg);
+  border-radius: 50px;
 }
 
 .programs__swiper-buttons {

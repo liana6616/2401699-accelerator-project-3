@@ -20,7 +20,7 @@ new Swiper('#swiper-news', {
   modules: [Pagination],
   breakpoints: {
     320: {
-      slidesPerView: 1,
+      // slidesPerView: 1,
       allowTouchMove: true,
     },
     768: {
@@ -34,8 +34,29 @@ new Swiper('#swiper-news', {
   }
 });
 
+new Swiper('#swiper-new', {
+
+  modules: [Pagination],
+  breakpoints: {
+    320: {
+      slidesPerView: 2.5,
+      allowTouchMove: true,
+    },
+    768: {
+      slidesPerView: 3.5,
+      allowTouchMove: true,
+    },
+    1440: {
+      slidesPerView: 4,
+      // allowTouchMove: false,
+    }
+  }
+});
+
 const tabsBtn = document.querySelectorAll('.news__tab-button');
 const tabsItems = document.querySelectorAll('.news__tab-list');
+const tabsItem = document.querySelectorAll('.news__list');
+
 
 tabsBtn.forEach(onTabClick);
 
@@ -52,11 +73,15 @@ function onTabClick(item) {
       });
 
       tabsItems.forEach((el) => {
-        el.classList.remove('news__tab-list--active');
+        el.classList.remove('news__list--active');
+      });
+
+      tabsItem.forEach((el) => {
+        el.classList.remove('news__list--active');
       });
 
       currentBtn.classList.add('news__tab-button--active');
-      currentTab.classList.add('news__tab-list--active');
+      currentTab.classList.add('news__list--active');
     }
   });
 }

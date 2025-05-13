@@ -17,8 +17,8 @@ new Swiper('#swiper-hero', {
       allowTouchMove: true,
       initialSlide: 0,
     },
-    1440: {
-      allowTouchMove: false,
-    },
+    // 1440: {
+    //   allowTouchMove: false,
+    // },
   }
 });

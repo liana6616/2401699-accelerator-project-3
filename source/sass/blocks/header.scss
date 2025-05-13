@@ -55,7 +55,7 @@
     position: absolute;
     content: "";
     bottom: 22px;
-    right: 16px;
+    right: 18px;
     width: 16px;
     height: 8px;
     mask-image: url("/__spritemap#sprite-burger-open-view");
@@ -216,7 +216,7 @@
     right: 0;
     top: 6px;
     width: 12px;
-    height: 12px;
+    height: 6px;
     mask-image: url("/__spritemap#sprite-stroke-view");
     mask-repeat: no-repeat;
     background-color: $base-light;
