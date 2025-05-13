@@ -131,12 +131,7 @@
     position: relative;
     bottom: 0;
     left: 0;
-    // gap: 30px;
   }
-
-  // @media (min-width: $min-width-desktop) {
-  //   gap: 32px;
-  // }
 }
 
 .reviews__picture {
@@ -236,7 +231,6 @@
   }
 
   @media (min-width: $min-width-tablet) {
-    // max-width: 560px;
     padding: 50px 50px 49px;
 
     &:nth-child(-n+2) {

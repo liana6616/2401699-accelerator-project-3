@@ -83,8 +83,6 @@
 
 .programs__wrapper {
   @media (min-width: $min-width-tablet) {
-    // max-width: 324px;
-
     &:nth-child(n+5) {
       display: none;
     }
@@ -92,7 +90,6 @@
 
   @media (min-width: $min-width-desktop) {
     display: none;
-    // max-width: 392px;
 
     &:nth-child(n+5) {
       display: flow;
@@ -130,13 +127,11 @@
   margin-bottom: 75px;
 
   @media (min-width: $min-width-tablet) {
-    // gap: 30px;
     margin-bottom: 50px;
   }
 
   @media (min-width: $min-width-desktop) {
     margin-bottom: 50px;
-    // gap: 32px;
   }
 }
 

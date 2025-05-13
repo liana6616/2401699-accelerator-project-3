@@ -20,7 +20,6 @@ new Swiper('#swiper-news', {
   modules: [Pagination],
   breakpoints: {
     320: {
-      // slidesPerView: 1,
       allowTouchMove: true,
     },
     768: {
@@ -48,7 +47,6 @@ new Swiper('#swiper-new', {
     },
     1440: {
       slidesPerView: 4,
-      // allowTouchMove: false,
     }
   }
 });

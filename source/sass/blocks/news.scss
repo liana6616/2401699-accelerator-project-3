@@ -56,21 +56,13 @@
 
   @media (min-width: $min-width-desktop) {
     max-width: 375px;
-    // min-width: 286px;
     min-height: 400px;
-    // margin-right: 39px;
 
     &:nth-child(n+5) {
       display: flow;
     }
   }
 }
-
-// .news__tab-item.swiper-slide-active {
-//   @media (min-width: $min-width-desktop) {
-//     min-width: 604px;
-//   }
-// }
 
 .news__text-position--width {
   @media (min-width: $min-width-desktop) {
@@ -89,7 +81,6 @@
   gap: 10px;
 
   @media (min-width: $min-width-tablet) {
-    // justify-content: center;
     gap: 6px;
     margin: 0 0 30px;
   }
@@ -171,7 +162,6 @@
 
   @media (min-width: $min-width-desktop) {
     margin: 0;
-    // padding: 0;
   }
 }
 
@@ -181,15 +171,12 @@
 
 .news__tab-list {
   display: none;
-  // display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   row-gap: 20px;
-  // max-height: 590px;
   max-height: 360px;
   margin-bottom: 24px;
   border-radius: 12px;
-  // overflow: hidden;
 
   @media (min-width: $min-width-tablet) {
     overflow: hidden;
@@ -205,8 +192,7 @@
   @media (min-width: $min-width-desktop) {
     flex-wrap: nowrap;
     gap: 39px;
-    // gap: 0;
-    min-width: 1240px;
+    min-width: $width-alt-big;
     max-width: $width-alt-big;
     min-height: 400px;
     max-height: 400px;
@@ -561,21 +547,17 @@
 }
 
 .news__width {
-  min-width: 290px;
+  min-width: $width-alt-small;
 
   @media (min-width: $min-width-desktop) {
     display: none;
-    min-width: 1240px;
+    min-width: $width-alt-big;
     height: 472px;
     overflow: hidden;
-    // display: grid;
-    // grid-template-columns: 1240px 1240px;
-    // grid-template-rows: 1fr;
   }
 }
 
 .news__list {
-  // display: flex;
   display: none;
   overflow: hidden;
 }
